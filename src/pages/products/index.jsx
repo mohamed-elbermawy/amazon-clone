@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-// helpers
+// ** Helpers
 import Filter from './helpers/filter';
 import SingleProduct from './helpers/Product';
 

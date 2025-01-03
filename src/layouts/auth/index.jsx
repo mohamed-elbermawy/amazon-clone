@@ -1,14 +1,12 @@
 import { Fragment } from 'react';
 
-// pages
-import Login from '../../pages/login';
-import Register from '../../pages/register';
+// ** Router Outlet
+import { Outlet } from 'react-router';
 
 const AuthLayout = () => {
   return (
     <Fragment>
-      <Login />
-      <Register />
+      <Outlet />
     </Fragment>
   );
 }

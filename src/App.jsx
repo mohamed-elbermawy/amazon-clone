@@ -1,16 +1,13 @@
 import { Fragment } from "react";
 
-// layouts
-import AuthLayout from './layouts/auth';
-import MainLayout from './layouts/main';
+import { RouterProvider } from 'react-router';
+import { router } from "./routes";
 
 function App() {
 
   return (
     <Fragment>
-      <AuthLayout />
-      <hr />
-      <MainLayout />
+      <RouterProvider router={router} />
     </Fragment>
   )
 }

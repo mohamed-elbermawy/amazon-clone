@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-// helpers
+// ** Helpers
 import Slider from './helpers/slider';
 import Category from './helpers/category';
 import ProductSlider from './helpers/productSlider';

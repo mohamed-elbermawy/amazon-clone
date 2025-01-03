@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-// helpers
+// ** Helpers
 import Breadcrumbs from './helpers/breadcrumbs';
 import Slider from './helpers/slider';
 import Details from './helpers/details';
