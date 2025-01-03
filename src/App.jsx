@@ -1,13 +1,28 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
+// ** Router Provider
 import { RouterProvider } from 'react-router';
-import { router } from "./routes";
+
+// ** Mui Theme Provider
+import { ThemeProvider } from '@mui/material/styles';
+
+// ** Mui Base Styles
+import { CssBaseline } from '@mui/material';
+
+// ** Routes
+import { router } from './routes';
+
+// ** Custom Theme
+import theme from './styles/_theme';
 
 function App() {
 
   return (
     <Fragment>
-      <RouterProvider router={router} />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <RouterProvider router={router} />  
+      </ThemeProvider>
     </Fragment>
   )
 }

@@ -1,11 +1,14 @@
 import { Navigate, createBrowserRouter } from 'react-router';
+
 // ** Layouts
 import MainLayout from '../layouts/main/index';
 import AuthLayout from '../layouts/auth/index';
+
 // ** Pages
 import Home from '../pages/home';
 import Products from '../pages/products';
 import SingleProduct from '../pages/singleProduct';
+
 import Register from '../pages/register';
 import Login from '../pages/login';
 
