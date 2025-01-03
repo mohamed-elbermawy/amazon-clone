@@ -8,6 +8,7 @@ import AuthLayout from '../layouts/auth/index';
 import Home from '../pages/home';
 import Products from '../pages/products';
 import SingleProduct from '../pages/singleProduct';
+import NotFound from '../pages/notFound';
 
 import Register from '../pages/register';
 import Login from '../pages/login';
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
         element: authenticated ? <Navigate to={'/'} /> : <AuthLayout />, // ** Redirect to home if authenticated
         children: [
             {
+                path: '', // ** localhost:port/auth/login
+                element: <Navigate to={'/auth/login'} />
+            },
+            {
                 path: 'register', // ** localhost:port/auth/register
                 Component: Register
             },
@@ -46,5 +51,9 @@ export const router = createBrowserRouter([
                 Component: Login
             }
         ]
+    },
+    {
+        path: '*', // ** localhost:port/*,
+        Component: NotFound
     }
 ]);
